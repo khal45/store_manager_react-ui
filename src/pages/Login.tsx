@@ -1,6 +1,7 @@
 // Imports
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import styles from "../assets/styles/login-styles.module.css";
 
 const Login = () => {
   // state declarations
@@ -43,10 +44,10 @@ const Login = () => {
   };
 
   return (
-    <div id="login-page">
-      {errorMessage && <p className="error-msg">{errorMessage}</p>}
-      <div className="container">
-        <div className="h1-container">
+    <div className={styles.loginPage}>
+      {errorMessage && <p className={styles.errorMsg}>{errorMessage}</p>}
+      <div className={styles.container}>
+        <div className={styles.h1Container}>
           <h1>Login</h1>
         </div>
         <form
@@ -55,7 +56,7 @@ const Login = () => {
             handleLogin(new FormData(event.currentTarget));
           }}
         >
-          <div className="username-container">
+          <div className={styles.usernameContainer}>
             <input
               type="text"
               id="username"
@@ -64,7 +65,7 @@ const Login = () => {
               required
             />
           </div>
-          <div className="password-container">
+          <div className={styles.passwordContainer}>
             <input
               type="password"
               id="password"
@@ -73,7 +74,7 @@ const Login = () => {
               required
             />
           </div>
-          <div className="btn-container">
+          <div className={styles.btnContainer}>
             <button type="submit" id="login-btn">
               LOG IN
             </button>

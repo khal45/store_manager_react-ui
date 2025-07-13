@@ -1,9 +1,23 @@
-.error-msg {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pure-white: #ffffff;
+  --background: #f2f4f7;
+  --content-black: #171717;
+  --lighter-background: #ecf0f6;
+  --content-gray: #9d9d9d;
+}
+
+.errorMsg {
   color: #ff0000;
   margin-bottom: 4vh;
 }
 
-#login-page {
+.loginPage {
   background-color: var(--background);
   font-family: "Roboto", sans-serif;
   display: flex;
@@ -22,7 +36,7 @@
   padding: 0px 3vw;
 }
 
-.h1-container {
+.h1Container {
   display: flex;
   justify-content: center;
   margin: 40px 0px 50px;
@@ -32,7 +46,7 @@
   color: var(--content-black);
 }
 
-.username-container {
+.usernameContainer {
   display: flex;
   justify-content: center;
 }
@@ -44,13 +58,13 @@
   margin: 0px 10px 0px 10px;
 }
 
-.password-container {
+.passwordContainer {
   display: flex;
   justify-content: center;
   margin: 95px 0px 95px 0px;
 }
 
-.btn-container {
+.btnContainer {
   display: flex;
   justify-content: center;
 }
@@ -74,11 +88,11 @@
     width: 80vw;
   }
 
-  .h1-container {
+  .h1Container {
     margin: 7vh 0px;
   }
 
-  .password-container {
+  .passwordContainer {
     margin: 10vh 0px 7vh 0px;
   }
 }
